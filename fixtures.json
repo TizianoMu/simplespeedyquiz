@@ -1,0 +1,26 @@
+[
+    {
+        "model": "quiz.question",
+        "pk": 1,
+        "fields": {
+            "question_text": "Qual è il colore del cielo?",
+            "option_a": "Blu",
+            "option_b": "Verde",
+            "option_c": "Rosso",
+            "option_d": "Giallo",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 2,
+        "fields": {
+            "question_text": "Quanto fa 2 + 2?",
+            "option_a": "3",
+            "option_b": "4",
+            "option_c": "5",
+            "option_d": "6",
+            "correct_answer": "B"
+        }
+    }
+]

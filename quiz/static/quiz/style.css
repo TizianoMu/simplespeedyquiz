@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #770103;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.btn-light {
+    background-color: #212121;
+    color: #fff !important;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #f0f0f0;
+}
+
+body.light-theme {
+    color: #000000;
+}
+
+.primary-color.light-theme {
+    background-color: #f8f9fa;
+    color: #212121;
+}
+
+.primary-color {
+    background-color: #212121;
+    color: #fff;
+}
+
+#question-container {
+    margin: 0 auto;
+}
+
+.logo {
+    height: auto;
+    width: 15%;
+}

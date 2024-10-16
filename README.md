@@ -71,8 +71,29 @@ Django fornisce diversi strumenti per fare il deploy su server di produzione. I 
     2. Utilizza un server web come Gunicorn o uWSGI insieme a Nginx.
     3. Configura un servizio cloud o un VPS (Heroku, DigitalOcean, AWS, ecc.) per eseguire il tuo progetto Django.
 
+## Struttura del Progetto
+rischiatutto/
+│
+├── quiz/
+│   ├── migrations/        # Migrazioni del database
+│   ├── static/            # File statici come CSS e JavaScript
+│   │   └── quiz/
+│   │       ├── style.css  # Foglio di stile principale
+│   │       └── theme.js   # Script per la gestione del tema
+│   ├── templates/         # Template HTML
+│   │   └── quiz/
+│   │       ├── base.html  # Layout base del sito
+│   │       ├── home.html  # Home page con regolamento
+│   │       └── quiz.html  # Pagina del quiz
+│   ├── fixtures.json      # File JSON contenente le domande predefinite
+│   └── views.py           # Logica delle view
+│
+├── manage.py              # Script per gestire il progetto Django
+├── requirements.txt       # Dipendenze del progetto
+└── README.md              # Questo file
+
 ## Contatti
 Per qualsiasi domanda o problema, non esitare a contattare lo sviluppatore:
 
 - Email: tiziano.murzio@outlook.it
-- GitHub: https://github.com/TizianoMu
+- GitHub: https://github.com/tizianomurzio
