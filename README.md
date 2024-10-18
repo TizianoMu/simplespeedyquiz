@@ -13,7 +13,7 @@ Benvenuti a **Rischiatutto**, un'applicazione web creata con Django che simula u
 1. Clona la repository:
 
    ```bash
-    git clone https://github.com/tuo-nome/rischiatutto.git
+    git clone https://github.com/TizianoMu/rischiatutto.git
     ```
 2. Vai nella directory del progetto:
    ```bash
