@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Question,Table
+from .models import Question
 import random
 
 def home(request):
@@ -9,11 +9,7 @@ def home(request):
         request.session['answered_questions'] = []
     if 'number_of_answered_questions' in request.session:
         request.session['number_of_answered_questions'] = 0
-    if 'answered_questions_table' in request.session:
-        request.session['answered_questions_table'] = []
-    if 'number_of_answered_questions_table' in request.session:
-        request.session['number_of_answered_questions_table'] = 0
-    return render(request, 'quiz/homepage.html')  # Renderizza la homepage
+    return render(request, 'quiz/homepage.html')  # Homepage rendering
 
 def quiz_home(request):
     if 'score' not in request.session:
@@ -21,14 +17,14 @@ def quiz_home(request):
         request.session['answered_questions'] = []
         request.session['number_of_answered_questions'] = 0
 
-    # Recupera tutte le domande e ne sceglie una casualmente
+    # Retrieves all questions and chooses one randomly
     questions = Question.objects.exclude(id__in=request.session['answered_questions'])
     if not questions.exists() or request.session['number_of_answered_questions'] >= 5:
         return redirect('quiz_summary')
 
     question = random.choice(questions)
     
-    return render(request, 'quiz/home.html', {
+    return render(request, 'quiz/quiz.html', {
         'question': question,
         'score': request.session['score'],
     })
@@ -41,11 +37,11 @@ def submit_answer(request):
 
         is_correct = selected_answer == question.correct_answer
 
-        # Aggiorna il punteggio
+        # Update the score
         if is_correct:
             request.session['score'] += 3000
         request.session['number_of_answered_questions'] += 1
-        # Aggiungi la domanda alla lista di quelle già risposte
+        # Add question to excluded questions
         request.session['answered_questions'].append(question.id)
 
         return redirect('quiz_home')
@@ -57,9 +53,7 @@ def quiz_summary(request):
     total_questions = len(request.session['answered_questions'])
     max_score = len(request.session['answered_questions']) * 3000
 
-    # Resetta il punteggio e le domande per un nuovo quiz
-    # request.session.flush()
-
+    # Reset the score
     return render(request, 'quiz/summary.html', {
         'score': score,
         'total_questions': total_questions,

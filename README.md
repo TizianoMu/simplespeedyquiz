@@ -1,99 +1,85 @@
 # SimpleSpeedyQuiz - Web Quiz Game
 
-Benvenuti a **SimpleSpeedyQuiz**, un'applicazione web creata con Django che simula un quiz televisivo. Gli utenti possono rispondere a domande di vario tipo e il loro punteggio viene calcolato in base alle risposte corrette. Il gioco supporta anche il cambio di tema (tema chiaro/scuro) e la gestione delle domande tramite un database.
+Welcome to **SimpleSpeedyQuiz**, a web application built with Django. Users can answer various types of questions, and their score is calculated based on the correct answers. The game also supports theme switching (light/dark mode) and question management via a database.
 
-## Requisiti
+## Requirements
 
-- **Python 3.x** (>=3.7 consigliato)
-- **Django 3.x** o successivo
-- **SQLite** (predefinito in Django)
+- **Python 3.x** (>=3.7 recommended)
+- **Django 3.x** or later
+- **SQLite** (default in Django)
 
 ## Installazione
 
-1. Clona la repository:
+1. Clone the repository::
 
    ```bash
     git clone https://github.com/TizianoMu/simplespeedyquiz.git
     ```
-2. Vai nella directory del progetto:
+2. Navigate to the project directory::
    ```bash
     cd simplespeedyquiz
     ```
-3. Installa le dipendenze:
+3. Install the dependencies:
    ```bash
     pip install -r requirements.txt
     ```
-4. Applica le migrazioni del database:
+4. Apply the database migrations:
    ```bash
     python manage.py migrate
     ```
-5. Avvia il server di sviluppo: 
+5. Start the development server: 
    ```bash
     python manage.py runserver
     ```
-6. Accedi all'applicazione tramite il browser all'indirizzo http://127.0.0.1:8000.
+6. Access the application via your browser at http://127.0.0.1:8000.
 
-FAQ (Domande Frequenti)
-1. Come posso cambiare il tema tra chiaro e scuro?
-Il tema può essere cambiato in qualsiasi momento cliccando sul pulsante "Tema Chiaro/Tema Scuro" in alto a destra dell'interfaccia. Il tema scelto verrà memorizzato nel browser e verrà applicato automaticamente ogni volta che visiti il sito, anche dopo aver chiuso e riaperto il browser.
+FAQ (Frequently Asked Questions)
+1. How can I switch between light and dark theme?
+The theme can be changed at any time by clicking the "Light/Dark Theme" button in the top-right corner of the interface. The selected theme will be saved in your browser and automatically applied each time you visit the site, even after closing and reopening the browser.
 
-2. Il tema viene mantenuto su tutte le pagine?
-Sì, il tema selezionato viene salvato utilizzando il localStorage del browser. In questo modo, il tema scelto dall'utente viene mantenuto mentre si naviga tra le pagine o si ricarica il sito. Non è necessario cambiare il tema ogni volta.
+2. Is the theme retained across all pages?
+Yes, the selected theme is saved using the browser's localStorage. This means that the theme remains consistent as you navigate between pages or refresh the site. You don’t need to change the theme every time.
 
-3. Come posso aggiungere nuove domande al quiz?
-Per aggiungere nuove domande, segui questi passaggi:
+3. How can I add new questions to the quiz?
+To add new questions, follow these steps:
 
-    1. Apri il file fixtures.json nella directory /quiz/fixtures/ o utilizza l'interfaccia di amministrazione di Django per gestire il database.
+    1. Open the fixtures.json file in the /quiz/fixtures/ directory or use the Django admin interface to manage the database.
 
-    2. Se preferisci utilizzare l'admin di Django:
+    2. If you prefer using Django's admin interface:
 
-        - Prima di tutto, crea un superuser:
+        - First, create a superuser:
         ```bash
         python manage.py createsuperuser
         ```
-        - Accedi all'interfaccia di amministrazione all'indirizzo http://127.0.0.1:8000/admin e inserisci le tue credenziali.
+        - Log in to the admin interface at http://127.0.0.1:8000/admin using your credentials.
 
-        - Vai alla sezione "Questions" e aggiungi nuove domande specificando il testo della domanda, le opzioni e la risposta corretta.
-4. Come faccio a resettare il quiz?
-    Attualmente, per resettare il quiz (cioè ricominciare da capo con le domande), puoi:
-
-    - Ricaricare la pagina o navigare alla home page per iniziare una nuova sessione.
-    - Puoi anche implementare un pulsante "Reset" che aggiorna il punteggio e le domande rimanenti.
-5. Posso cambiare i colori del tema?
-Sì, puoi cambiare i colori del tema modificando il file CSS style.css che si trova nella directory /static/quiz/. Cerca la classe .light-theme e personalizza i colori a seconda delle tue preferenze
-6. Come posso fare il deploy in produzione?
-Django fornisce diversi strumenti per fare il deploy su server di produzione. I passaggi generali includono:
-
-    1. Configura il file settings.py per la modalità di produzione:
-        - Imposta DEBUG = False.
-        - Configura ALLOWED_HOSTS con il nome del dominio o l'IP del server.
-        - Imposta un database di produzione, come PostgreSQL.
-    2. Utilizza un server web come Gunicorn o uWSGI insieme a Nginx.
-    3. Configura un servizio cloud o un VPS (Heroku, DigitalOcean, AWS, ecc.) per eseguire il tuo progetto Django.
-
-## Struttura del Progetto
+        - Go to the "Questions" section and add new questions by specifying the question text, options, and the correct answer.
+4. How can I reset the quiz?
+    To reset the quiz (i.e., start over with the questions), you can reload the page or navigate back to the homepage to start a new session.
+## Project Structure
 simplespeedyquiz/
 │
 ├── quiz/
-│   ├── migrations/        # Migrazioni del database
-│   ├── static/            # File statici come CSS e JavaScript
+│   ├── migrations/        # Database migrations
+│   ├── static/            # Static files like CSS and JavaScript
 │   │   └── quiz/
-│   │       ├── style.css  # Foglio di stile principale
-│   │       └── theme.js   # Script per la gestione del tema
-│   ├── templates/         # Template HTML
+│   │       ├── style.css  # Main stylesheet
+│   │       └── theme.js   # Script for theme management
+│   ├── templates/         # HTML templates
 │   │   └── quiz/
 │   │       ├── base.html  # Layout base del sito
-│   │       ├── home.html  # Home page con regolamento
-│   │       └── quiz.html  # Pagina del quiz
-│   ├── fixtures.json      # File JSON contenente le domande predefinite
-│   └── views.py           # Logica delle view
+│   │       ├── homepage.html  # Home page with instructions
+│   │       ├── summary.html  # Summary page
+│   │       └── quiz.html  # Quiz page
+│   ├── fixtures.json      # JSON file containing predefined questions
+│   └── views.py           # View logic
 │
-├── manage.py              # Script per gestire il progetto Django
-├── requirements.txt       # Dipendenze del progetto
-└── README.md              # Questo file
+├── manage.py              
+├── requirements.txt       # Project dependencies
+└── README.md              # This file
 
-## Contatti
-Per qualsiasi domanda o problema, non esitare a contattare lo sviluppatore:
+## Contact
+For any questions or issues, feel free to contact the developer:
 
-- Email: tiziano.murzio@outlook.it
-- GitHub: https://github.com/tizianomurzio
+Email: tiziano.murzio@outlook.it
+GitHub: https://github.com/tizianomurzio
