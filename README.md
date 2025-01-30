@@ -56,28 +56,6 @@ To add new questions, follow these steps:
         - Go to the "Questions" section and add new questions by specifying the question text, options, and the correct answer.
 4. How can I reset the quiz?
     To reset the quiz (i.e., start over with the questions), you can reload the page or navigate back to the homepage to start a new session.
-## Project Structure
-simplespeedyquiz/
-│
-├── quiz/
-│   ├── migrations/        # Database migrations
-│   ├── static/            # Static files like CSS and JavaScript
-│   │   └── quiz/
-│   │       ├── style.css  # Main stylesheet
-│   │       └── theme.js   # Script for theme management
-│   ├── templates/         # HTML templates
-│   │   └── quiz/
-│   │       ├── base.html  # Layout base del sito
-│   │       ├── homepage.html  # Home page with instructions
-│   │       ├── summary.html  # Summary page
-│   │       └── quiz.html  # Quiz page
-│   ├── fixtures.json      # JSON file containing predefined questions
-│   └── views.py           # View logic
-│
-├── manage.py              
-├── requirements.txt       # Project dependencies
-└── README.md              # This file
-
 ## Contact
 For any questions or issues, feel free to contact the developer:
 
