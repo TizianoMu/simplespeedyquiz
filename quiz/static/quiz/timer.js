@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         if (timeLeft <= 0) {
             clearInterval(countdown);
-            alert('Tempo scaduto! La risposta è stata inviata automaticamente.');
+            alert(TimeExpired);
             document.querySelector('form').submit();
         }
     }, 1000);

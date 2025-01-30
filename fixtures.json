@@ -3,11 +3,11 @@
         "model": "quiz.question",
         "pk": 1,
         "fields": {
-            "question_text": "Qual \u00e8 il colore del cielo?",
-            "option_a": "Blu",
-            "option_b": "Verde",
-            "option_c": "Rosso",
-            "option_d": "Giallo",
+            "question_text": "What is the color of the sky?",
+            "option_a": "Blue",
+            "option_b": "Green",
+            "option_c": "Red",
+            "option_d": "Yellow",
             "correct_answer": "A"
         }
     },
@@ -15,11 +15,11 @@
         "model": "quiz.question",
         "pk": 2,
         "fields": {
-            "question_text": "Quanto fa 2 + 2?",
-            "option_a": "3",
-            "option_b": "4",
-            "option_c": "5",
-            "option_d": "6",
+            "question_text": "Which planet is known as the Red Planet?",
+            "option_a": "Earth",
+            "option_b": "Mars",
+            "option_c": "Jupiter",
+            "option_d": "Venus",
             "correct_answer": "B"
         }
     },
@@ -27,47 +27,47 @@
         "model": "quiz.question",
         "pk": 3,
         "fields": {
-            "question_text": "Chi ha scritto 'I promessi sposi'?",
-            "option_a": "Giacomo Leopardi",
-            "option_b": "Alessandro Manzoni",
-            "option_c": "Dante Alighieri",
-            "option_d": "Francesco Petrarca",
-            "correct_answer": "B"
+            "question_text": "What is the capital of France?",
+            "option_a": "Berlin",
+            "option_b": "Madrid",
+            "option_c": "Paris",
+            "option_d": "Rome",
+            "correct_answer": "C"
         }
     },
     {
         "model": "quiz.question",
         "pk": 4,
         "fields": {
-            "question_text": "Qual \u00e8 il pianeta pi\u00f9 vicino al Sole?",
-            "option_a": "Venere",
-            "option_b": "Mercurio",
-            "option_c": "Terra",
-            "option_d": "Marte",
-            "correct_answer": "B"
+            "question_text": "How many continents are there on Earth?",
+            "option_a": "Five",
+            "option_b": "Six",
+            "option_c": "Seven",
+            "option_d": "Eight",
+            "correct_answer": "C"
         }
     },
     {
         "model": "quiz.question",
         "pk": 5,
         "fields": {
-            "question_text": "In che anno \u00e8 iniziata la Prima Guerra Mondiale?",
-            "option_a": "1914",
-            "option_b": "1915",
-            "option_c": "1916",
-            "option_d": "1917",
-            "correct_answer": "A"
+            "question_text": "What is the largest ocean on Earth?",
+            "option_a": "Atlantic Ocean",
+            "option_b": "Indian Ocean",
+            "option_c": "Arctic Ocean",
+            "option_d": "Pacific Ocean",
+            "correct_answer": "D"
         }
     },
     {
         "model": "quiz.question",
         "pk": 6,
         "fields": {
-            "question_text": "Qual \u00e8 la capitale della Francia?",
-            "option_a": "Lione",
-            "option_b": "Marsiglia",
-            "option_c": "Parigi",
-            "option_d": "Bordeaux",
+            "question_text": "What is the chemical symbol for water?",
+            "option_a": "O2",
+            "option_b": "CO2",
+            "option_c": "H2O",
+            "option_d": "NaCl",
             "correct_answer": "C"
         }
     },
@@ -75,11 +75,11 @@
         "model": "quiz.question",
         "pk": 7,
         "fields": {
-            "question_text": "Chi ha scoperto l'America?",
-            "option_a": "Cristoforo Colombo",
-            "option_b": "Marco Polo",
-            "option_c": "Amerigo Vespucci",
-            "option_d": "Vasco da Gama",
+            "question_text": "Who wrote 'Romeo and Juliet'?",
+            "option_a": "William Shakespeare",
+            "option_b": "Jane Austen",
+            "option_c": "Mark Twain",
+            "option_d": "Charles Dickens",
             "correct_answer": "A"
         }
     },
@@ -87,35 +87,35 @@
         "model": "quiz.question",
         "pk": 8,
         "fields": {
-            "question_text": "Qual \u00e8 la sostanza chimica principale nell'acqua?",
-            "option_a": "Ossigeno",
-            "option_b": "Idrogeno",
-            "option_c": "Azoto",
-            "option_d": "Elio",
-            "correct_answer": "B"
+            "question_text": "Which is the smallest planet in our solar system?",
+            "option_a": "Mercury",
+            "option_b": "Mars",
+            "option_c": "Venus",
+            "option_d": "Pluto",
+            "correct_answer": "A"
         }
     },
     {
         "model": "quiz.question",
         "pk": 9,
         "fields": {
-            "question_text": "Qual \u00e8 il simbolo chimico dell'oro?",
-            "option_a": "Au",
-            "option_b": "Ag",
-            "option_c": "Fe",
-            "option_d": "Cu",
-            "correct_answer": "A"
+            "question_text": "What is the capital of Japan?",
+            "option_a": "Beijing",
+            "option_b": "Seoul",
+            "option_c": "Tokyo",
+            "option_d": "Bangkok",
+            "correct_answer": "C"
         }
     },
     {
         "model": "quiz.question",
         "pk": 10,
         "fields": {
-            "question_text": "Quale animale \u00e8 conosciuto come il 're della giungla'?",
-            "option_a": "Tigre",
-            "option_b": "Leone",
-            "option_c": "Elefante",
-            "option_d": "Giraffa",
+            "question_text": "Which gas do plants absorb from the atmosphere?",
+            "option_a": "Oxygen",
+            "option_b": "Carbon Dioxide",
+            "option_c": "Nitrogen",
+            "option_d": "Hydrogen",
             "correct_answer": "B"
         }
     },
@@ -123,71 +123,71 @@
         "model": "quiz.question",
         "pk": 11,
         "fields": {
-            "question_text": "Chi ha dipinto la 'Gioconda'?",
-            "option_a": "Pablo Picasso",
-            "option_b": "Vincent van Gogh",
-            "option_c": "Leonardo da Vinci",
-            "option_d": "Michelangelo",
-            "correct_answer": "C"
+            "question_text": "Which of the following is NOT one of the three laws of motion proposed by Sir Isaac Newton?",
+            "option_a": "Law of Inertia",
+            "option_b": "Law of Universal Gravitation",
+            "option_c": "Action and Reaction Law",
+            "option_d": "Force equals mass times acceleration",
+            "correct_answer": "B"
         }
     },
     {
         "model": "quiz.question",
         "pk": 12,
         "fields": {
-            "question_text": "Qual \u00e8 la lingua pi\u00f9 parlata al mondo?",
-            "option_a": "Inglese",
-            "option_b": "Spagnolo",
-            "option_c": "Cinese mandarino",
-            "option_d": "Hindi",
-            "correct_answer": "C"
+            "question_text": "What is the primary function of ribosomes in eukaryotic cells?",
+            "option_a": "Energy production",
+            "option_b": "Protein synthesis",
+            "option_c": "Cell division",
+            "option_d": "DNA replication",
+            "correct_answer": "B"
         }
     },
     {
         "model": "quiz.question",
         "pk": 13,
         "fields": {
-            "question_text": "Chi ha scritto l'opera 'La Divina Commedia'?",
-            "option_a": "Alessandro Manzoni",
-            "option_b": "Giovanni Boccaccio",
-            "option_c": "Dante Alighieri",
-            "option_d": "Francesco Petrarca",
-            "correct_answer": "C"
+            "question_text": "In what year did the first human land on the moon?",
+            "option_a": "1967",
+            "option_b": "1969",
+            "option_c": "1971",
+            "option_d": "1975",
+            "correct_answer": "B"
         }
     },
     {
         "model": "quiz.question",
         "pk": 14,
         "fields": {
-            "question_text": "Qual \u00e8 la capitale dell'Australia?",
-            "option_a": "Sydney",
-            "option_b": "Melbourne",
-            "option_c": "Canberra",
-            "option_d": "Perth",
-            "correct_answer": "C"
+            "question_text": "Which of the following is the longest river in the world?",
+            "option_a": "Amazon",
+            "option_b": "Nile",
+            "option_c": "Yangtze",
+            "option_d": "Mississippi",
+            "correct_answer": "B"
         }
     },
     {
         "model": "quiz.question",
         "pk": 15,
         "fields": {
-            "question_text": "Qual \u00e8 il simbolo chimico dell'acqua?",
-            "option_a": "HO",
-            "option_b": "H2O",
-            "option_c": "O2",
-            "option_d": "H3O",
-            "correct_answer": "B"
+            "question_text": "What element has the atomic number 79?",
+            "option_a": "Gold",
+            "option_b": "Silver",
+            "option_c": "Platinum",
+            "option_d": "Iron",
+            "correct_answer": "A"
         }
     },
     {
         "model": "quiz.question",
         "pk": 16,
         "fields": {
-            "question_text": "Qual \u00e8 la valuta ufficiale del Giappone?",
-            "option_a": "Yuan",
-            "option_b": "Yen",
-            "option_c": "Won",
-            "option_d": "Rupia",
+            "question_text": "Which of the following is the main characteristic of an exothermic reaction?",
+            "option_a": "Absorbs energy",
+            "option_b": "Releases energy",
+            "option_c": "Occurs only in liquids",
+            "option_d": "Requires a catalyst",
             "correct_answer": "B"
         }
     },
@@ -195,59 +195,59 @@
         "model": "quiz.question",
         "pk": 17,
         "fields": {
-            "question_text": "Quale paese ha ospitato le Olimpiadi del 2016?",
-            "option_a": "Brasile",
-            "option_b": "Cina",
-            "option_c": "Regno Unito",
-            "option_d": "Grecia",
-            "correct_answer": "A"
+            "question_text": "Who is credited with the discovery of penicillin?",
+            "option_a": "Louis Pasteur",
+            "option_b": "Marie Curie",
+            "option_c": "Alexander Fleming",
+            "option_d": "Gregor Mendel",
+            "correct_answer": "C"
         }
     },
     {
         "model": "quiz.question",
         "pk": 18,
         "fields": {
-            "question_text": "Chi ha scritto 'Il Piccolo Principe'?",
-            "option_a": "Antoine de Saint-Exup\u00e9ry",
-            "option_b": "Jules Verne",
-            "option_c": "Victor Hugo",
-            "option_d": "Albert Camus",
-            "correct_answer": "A"
+            "question_text": "What is the name of the phenomenon where light bends as it passes through different mediums?",
+            "option_a": "Diffraction",
+            "option_b": "Reflection",
+            "option_c": "Refraction",
+            "option_d": "Absorption",
+            "correct_answer": "C"
         }
     },
     {
         "model": "quiz.question",
         "pk": 19,
         "fields": {
-            "question_text": "Qual \u00e8 la citt\u00e0 eterna?",
-            "option_a": "Atene",
-            "option_b": "Roma",
-            "option_c": "Istanbul",
-            "option_d": "Parigi",
-            "correct_answer": "B"
+            "question_text": "Which of the following authors wrote 'One Hundred Years of Solitude'?",
+            "option_a": "Gabriel Garcia Marquez",
+            "option_b": "Mario Vargas Llosa",
+            "option_c": "Isabel Allende",
+            "option_d": "Carlos Fuentes",
+            "correct_answer": "A"
         }
     },
     {
         "model": "quiz.question",
         "pk": 20,
         "fields": {
-            "question_text": "In che anno l'uomo \u00e8 sbarcato sulla luna?",
-            "option_a": "1967",
-            "option_b": "1969",
-            "option_c": "1971",
-            "option_d": "1973",
-            "correct_answer": "B"
+            "question_text": "In what year did the Berlin Wall fall?",
+            "option_a": "1985",
+            "option_b": "1987",
+            "option_c": "1989",
+            "option_d": "1991",
+            "correct_answer": "C"
         }
     },
     {
         "model": "quiz.question",
         "pk": 21,
         "fields": {
-            "question_text": "Chi \u00e8 il fondatore di Microsoft?",
-            "option_a": "Steve Jobs",
-            "option_b": "Mark Zuckerberg",
-            "option_c": "Bill Gates",
-            "option_d": "Larry Page",
+            "question_text": "What is the process by which plants convert sunlight into energy?",
+            "option_a": "Respiration",
+            "option_b": "Transpiration",
+            "option_c": "Photosynthesis",
+            "option_d": "Fermentation",
             "correct_answer": "C"
         }
     },
@@ -255,47 +255,47 @@
         "model": "quiz.question",
         "pk": 22,
         "fields": {
-            "question_text": "Qual \u00e8 il pi\u00f9 grande oceano della Terra?",
-            "option_a": "Oceano Atlantico",
-            "option_b": "Oceano Indiano",
-            "option_c": "Oceano Pacifico",
-            "option_d": "Oceano Artico",
-            "correct_answer": "C"
+            "question_text": "Which country was the first to grant women the right to vote?",
+            "option_a": "United States",
+            "option_b": "New Zealand",
+            "option_c": "United Kingdom",
+            "option_d": "Australia",
+            "correct_answer": "B"
         }
     },
     {
         "model": "quiz.question",
         "pk": 23,
         "fields": {
-            "question_text": "Quale citt\u00e0 \u00e8 conosciuta come la 'grande mela'?",
-            "option_a": "Los Angeles",
-            "option_b": "Chicago",
-            "option_c": "New York",
-            "option_d": "Miami",
-            "correct_answer": "C"
+            "question_text": "Which element is found in the highest concentration in the Earth's crust?",
+            "option_a": "Oxygen",
+            "option_b": "Silicon",
+            "option_c": "Aluminum",
+            "option_d": "Iron",
+            "correct_answer": "A"
         }
     },
     {
         "model": "quiz.question",
         "pk": 24,
         "fields": {
-            "question_text": "Chi \u00e8 stato il primo presidente degli Stati Uniti?",
-            "option_a": "Abraham Lincoln",
-            "option_b": "George Washington",
-            "option_c": "Thomas Jefferson",
-            "option_d": "John Adams",
-            "correct_answer": "B"
+            "question_text": "What is the process by which a solid turns directly into a gas?",
+            "option_a": "Sublimation",
+            "option_b": "Evaporation",
+            "option_c": "Condensation",
+            "option_d": "Freezing",
+            "correct_answer": "A"
         }
     },
     {
         "model": "quiz.question",
         "pk": 25,
         "fields": {
-            "question_text": "Quale elemento chimico ha il simbolo 'O'?",
-            "option_a": "Oro",
-            "option_b": "Ossigeno",
-            "option_c": "Azoto",
-            "option_d": "Osmio",
+            "question_text": "What is the powerhouse of the cell?",
+            "option_a": "Nucleus",
+            "option_b": "Mitochondria",
+            "option_c": "Endoplasmic reticulum",
+            "option_d": "Golgi apparatus",
             "correct_answer": "B"
         }
     },
@@ -303,11 +303,11 @@
         "model": "quiz.question",
         "pk": 26,
         "fields": {
-            "question_text": "Qual \u00e8 il monte pi\u00f9 alto del mondo?",
-            "option_a": "Monte Bianco",
-            "option_b": "Monte Everest",
-            "option_c": "K2",
-            "option_d": "Monte Fuji",
+            "question_text": "In which century did the Industrial Revolution begin?",
+            "option_a": "17th century",
+            "option_b": "18th century",
+            "option_c": "19th century",
+            "option_d": "20th century",
             "correct_answer": "B"
         }
     },
@@ -315,11 +315,167 @@
         "model": "quiz.question",
         "pk": 27,
         "fields": {
-            "question_text": "Quale lingua si parla in Brasile?",
-            "option_a": "Spagnolo",
-            "option_b": "Portoghese",
-            "option_c": "Francese",
-            "option_d": "Inglese",
+            "question_text": "Who was the first female Prime Minister of the United Kingdom?",
+            "option_a": "Theresa May",
+            "option_b": "Margaret Thatcher",
+            "option_c": "Elizabeth II",
+            "option_d": "Ellen Johnson Sirleaf",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 28,
+        "fields": {
+            "question_text": "Which of the following is NOT a primary color in the RGB color model?",
+            "option_a": "Red",
+            "option_b": "Green",
+            "option_c": "Blue",
+            "option_d": "Yellow",
+            "correct_answer": "D"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 29,
+        "fields": {
+            "question_text": "What is the chemical formula for methane?",
+            "option_a": "CH4",
+            "option_b": "C2H6",
+            "option_c": "CO2",
+            "option_d": "CH3OH",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 30,
+        "fields": {
+            "question_text": "Which famous scientist is known for his work on the theory of relativity?",
+            "option_a": "Isaac Newton",
+            "option_b": "Albert Einstein",
+            "option_c": "Nikola Tesla",
+            "option_d": "Charles Darwin",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 31,
+        "fields": {
+            "question_text": "What is the capital of Canada?",
+            "option_a": "Ottawa",
+            "option_b": "Toronto",
+            "option_c": "Vancouver",
+            "option_d": "Montreal",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 32,
+        "fields": {
+            "question_text": "Which element is represented by the symbol 'Na' on the periodic table?",
+            "option_a": "Sodium",
+            "option_b": "Nitrogen",
+            "option_c": "Neon",
+            "option_d": "Nickel",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 33,
+        "fields": {
+            "question_text": "Which famous painter is known for his 'Starry Night' painting?",
+            "option_a": "Claude Monet",
+            "option_b": "Pablo Picasso",
+            "option_c": "Vincent van Gogh",
+            "option_d": "Leonardo da Vinci",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 34,
+        "fields": {
+            "question_text": "What is the primary reason for the Earth's seasons?",
+            "option_a": "Earth's rotation",
+            "option_b": "Earth's distance from the Sun",
+            "option_c": "The tilt of Earth's axis",
+            "option_d": "The Sun's solar flares",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 35,
+        "fields": {
+            "question_text": "Which of the following is NOT a planet in our solar system?",
+            "option_a": "Mars",
+            "option_b": "Pluto",
+            "option_c": "Saturn",
+            "option_d": "Eris",
+            "correct_answer": "D"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 36,
+        "fields": {
+            "question_text": "What is the capital city of Japan?",
+            "option_a": "Kyoto",
+            "option_b": "Tokyo",
+            "option_c": "Osaka",
+            "option_d": "Hiroshima",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 37,
+        "fields": {
+            "question_text": "Which organ in the human body produces insulin?",
+            "option_a": "Liver",
+            "option_b": "Pancreas",
+            "option_c": "Kidneys",
+            "option_d": "Lungs",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 38,
+        "fields": {
+            "question_text": "What is the smallest planet in our solar system?",
+            "option_a": "Mercury",
+            "option_b": "Venus",
+            "option_c": "Mars",
+            "option_d": "Pluto",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 39,
+        "fields": {
+            "question_text": "What is the distance between the Earth and the Sun, known as one Astronomical Unit (AU)?",
+            "option_a": "93 million miles",
+            "option_b": "1 million miles",
+            "option_c": "100,000 miles",
+            "option_d": "93 million kilometers",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 40,
+        "fields": {
+            "question_text": "Which famous physicist developed the laws of motion and universal gravitation?",
+            "option_a": "Albert Einstein",
+            "option_b": "Isaac Newton",
+            "option_c": "Niels Bohr",
+            "option_d": "Galileo Galilei",
             "correct_answer": "B"
         }
     }

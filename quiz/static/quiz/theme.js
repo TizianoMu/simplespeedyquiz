@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
 
-    // Assicurati che il pulsante per il toggle del tema esista
+    // Check if button exist
     if (themeToggle) {
-        // Funzione per applicare il tema memorizzato
+        // Set the theme based on localstorage
         function applySavedTheme() {
             const savedTheme = localStorage.getItem('theme');
             
             if (savedTheme === 'light-theme') {
                 document.body.classList.add('light-theme');
-                themeToggle.textContent = 'Tema Scuro';
+                themeToggle.textContent = darkThemeString;
             } else {
                 document.body.classList.remove('light-theme');
-                themeToggle.textContent = 'Tema Chiaro';
+                themeToggle.textContent = lightThemeString;
             }
 
-            // Applica il tema agli elementi con la classe "primary-color"
+            // Set the theme to all the elements with class "primary-color"
             const elements = document.querySelectorAll('.primary-color');
             elements.forEach(element => {
                 if (savedTheme === 'light-theme') {
@@ -37,14 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
-        // Applica il tema quando la pagina viene caricata
+        // Set the theme on page load
         applySavedTheme();
 
-        // Aggiungi evento al toggle del tema
         themeToggle.addEventListener('click', () => {
             const isLightTheme = document.body.classList.toggle('light-theme');
 
-            // Toggle per gli elementi con la classe "primary-color"
+            // Toggle for "primary-color" elements
             const elements = document.querySelectorAll('.primary-color');
             elements.forEach(element => {
                 element.classList.toggle('light-theme');
@@ -64,13 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            // Memorizza il tema nel localStorage
+            // Save theme in localstorage
             if (isLightTheme) {
                 localStorage.setItem('theme', 'light-theme');
-                themeToggle.textContent = 'Tema Scuro';
+                themeToggle.textContent = darkThemeString;
             } else {
                 localStorage.setItem('theme', 'dark-theme');
-                themeToggle.textContent = 'Tema Chiaro';
+                themeToggle.textContent = lightThemeString;
             }
         });
     }

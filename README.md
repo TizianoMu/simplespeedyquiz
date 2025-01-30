@@ -1,6 +1,6 @@
-# Rischiatutto - Web Quiz Game
+# SimpleSpeedyQuiz - Web Quiz Game
 
-Benvenuti a **Rischiatutto**, un'applicazione web creata con Django che simula un quiz televisivo. Gli utenti possono rispondere a domande di vario tipo e il loro punteggio viene calcolato in base alle risposte corrette. Il gioco supporta anche il cambio di tema (tema chiaro/scuro) e la gestione delle domande tramite un database.
+Benvenuti a **SimpleSpeedyQuiz**, un'applicazione web creata con Django che simula un quiz televisivo. Gli utenti possono rispondere a domande di vario tipo e il loro punteggio viene calcolato in base alle risposte corrette. Il gioco supporta anche il cambio di tema (tema chiaro/scuro) e la gestione delle domande tramite un database.
 
 ## Requisiti
 
@@ -13,11 +13,11 @@ Benvenuti a **Rischiatutto**, un'applicazione web creata con Django che simula u
 1. Clona la repository:
 
    ```bash
-    git clone https://github.com/TizianoMu/rischiatutto.git
+    git clone https://github.com/TizianoMu/simplespeedyquiz.git
     ```
 2. Vai nella directory del progetto:
    ```bash
-    cd rischiatutto
+    cd simplespeedyquiz
     ```
 3. Installa le dipendenze:
    ```bash
@@ -72,7 +72,7 @@ Django fornisce diversi strumenti per fare il deploy su server di produzione. I 
     3. Configura un servizio cloud o un VPS (Heroku, DigitalOcean, AWS, ecc.) per eseguire il tuo progetto Django.
 
 ## Struttura del Progetto
-rischiatutto/
+simplespeedyquiz/
 │
 ├── quiz/
 │   ├── migrations/        # Migrazioni del database
