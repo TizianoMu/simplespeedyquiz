@@ -3,7 +3,7 @@
         "model": "quiz.question",
         "pk": 1,
         "fields": {
-            "question_text": "Qual è il colore del cielo?",
+            "question_text": "Qual \u00e8 il colore del cielo?",
             "option_a": "Blu",
             "option_b": "Verde",
             "option_c": "Rosso",
@@ -20,6 +20,306 @@
             "option_b": "4",
             "option_c": "5",
             "option_d": "6",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 3,
+        "fields": {
+            "question_text": "Chi ha scritto 'I promessi sposi'?",
+            "option_a": "Giacomo Leopardi",
+            "option_b": "Alessandro Manzoni",
+            "option_c": "Dante Alighieri",
+            "option_d": "Francesco Petrarca",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 4,
+        "fields": {
+            "question_text": "Qual \u00e8 il pianeta pi\u00f9 vicino al Sole?",
+            "option_a": "Venere",
+            "option_b": "Mercurio",
+            "option_c": "Terra",
+            "option_d": "Marte",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 5,
+        "fields": {
+            "question_text": "In che anno \u00e8 iniziata la Prima Guerra Mondiale?",
+            "option_a": "1914",
+            "option_b": "1915",
+            "option_c": "1916",
+            "option_d": "1917",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 6,
+        "fields": {
+            "question_text": "Qual \u00e8 la capitale della Francia?",
+            "option_a": "Lione",
+            "option_b": "Marsiglia",
+            "option_c": "Parigi",
+            "option_d": "Bordeaux",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 7,
+        "fields": {
+            "question_text": "Chi ha scoperto l'America?",
+            "option_a": "Cristoforo Colombo",
+            "option_b": "Marco Polo",
+            "option_c": "Amerigo Vespucci",
+            "option_d": "Vasco da Gama",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 8,
+        "fields": {
+            "question_text": "Qual \u00e8 la sostanza chimica principale nell'acqua?",
+            "option_a": "Ossigeno",
+            "option_b": "Idrogeno",
+            "option_c": "Azoto",
+            "option_d": "Elio",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 9,
+        "fields": {
+            "question_text": "Qual \u00e8 il simbolo chimico dell'oro?",
+            "option_a": "Au",
+            "option_b": "Ag",
+            "option_c": "Fe",
+            "option_d": "Cu",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 10,
+        "fields": {
+            "question_text": "Quale animale \u00e8 conosciuto come il 're della giungla'?",
+            "option_a": "Tigre",
+            "option_b": "Leone",
+            "option_c": "Elefante",
+            "option_d": "Giraffa",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 11,
+        "fields": {
+            "question_text": "Chi ha dipinto la 'Gioconda'?",
+            "option_a": "Pablo Picasso",
+            "option_b": "Vincent van Gogh",
+            "option_c": "Leonardo da Vinci",
+            "option_d": "Michelangelo",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 12,
+        "fields": {
+            "question_text": "Qual \u00e8 la lingua pi\u00f9 parlata al mondo?",
+            "option_a": "Inglese",
+            "option_b": "Spagnolo",
+            "option_c": "Cinese mandarino",
+            "option_d": "Hindi",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 13,
+        "fields": {
+            "question_text": "Chi ha scritto l'opera 'La Divina Commedia'?",
+            "option_a": "Alessandro Manzoni",
+            "option_b": "Giovanni Boccaccio",
+            "option_c": "Dante Alighieri",
+            "option_d": "Francesco Petrarca",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 14,
+        "fields": {
+            "question_text": "Qual \u00e8 la capitale dell'Australia?",
+            "option_a": "Sydney",
+            "option_b": "Melbourne",
+            "option_c": "Canberra",
+            "option_d": "Perth",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 15,
+        "fields": {
+            "question_text": "Qual \u00e8 il simbolo chimico dell'acqua?",
+            "option_a": "HO",
+            "option_b": "H2O",
+            "option_c": "O2",
+            "option_d": "H3O",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 16,
+        "fields": {
+            "question_text": "Qual \u00e8 la valuta ufficiale del Giappone?",
+            "option_a": "Yuan",
+            "option_b": "Yen",
+            "option_c": "Won",
+            "option_d": "Rupia",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 17,
+        "fields": {
+            "question_text": "Quale paese ha ospitato le Olimpiadi del 2016?",
+            "option_a": "Brasile",
+            "option_b": "Cina",
+            "option_c": "Regno Unito",
+            "option_d": "Grecia",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 18,
+        "fields": {
+            "question_text": "Chi ha scritto 'Il Piccolo Principe'?",
+            "option_a": "Antoine de Saint-Exup\u00e9ry",
+            "option_b": "Jules Verne",
+            "option_c": "Victor Hugo",
+            "option_d": "Albert Camus",
+            "correct_answer": "A"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 19,
+        "fields": {
+            "question_text": "Qual \u00e8 la citt\u00e0 eterna?",
+            "option_a": "Atene",
+            "option_b": "Roma",
+            "option_c": "Istanbul",
+            "option_d": "Parigi",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 20,
+        "fields": {
+            "question_text": "In che anno l'uomo \u00e8 sbarcato sulla luna?",
+            "option_a": "1967",
+            "option_b": "1969",
+            "option_c": "1971",
+            "option_d": "1973",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 21,
+        "fields": {
+            "question_text": "Chi \u00e8 il fondatore di Microsoft?",
+            "option_a": "Steve Jobs",
+            "option_b": "Mark Zuckerberg",
+            "option_c": "Bill Gates",
+            "option_d": "Larry Page",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 22,
+        "fields": {
+            "question_text": "Qual \u00e8 il pi\u00f9 grande oceano della Terra?",
+            "option_a": "Oceano Atlantico",
+            "option_b": "Oceano Indiano",
+            "option_c": "Oceano Pacifico",
+            "option_d": "Oceano Artico",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 23,
+        "fields": {
+            "question_text": "Quale citt\u00e0 \u00e8 conosciuta come la 'grande mela'?",
+            "option_a": "Los Angeles",
+            "option_b": "Chicago",
+            "option_c": "New York",
+            "option_d": "Miami",
+            "correct_answer": "C"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 24,
+        "fields": {
+            "question_text": "Chi \u00e8 stato il primo presidente degli Stati Uniti?",
+            "option_a": "Abraham Lincoln",
+            "option_b": "George Washington",
+            "option_c": "Thomas Jefferson",
+            "option_d": "John Adams",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 25,
+        "fields": {
+            "question_text": "Quale elemento chimico ha il simbolo 'O'?",
+            "option_a": "Oro",
+            "option_b": "Ossigeno",
+            "option_c": "Azoto",
+            "option_d": "Osmio",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 26,
+        "fields": {
+            "question_text": "Qual \u00e8 il monte pi\u00f9 alto del mondo?",
+            "option_a": "Monte Bianco",
+            "option_b": "Monte Everest",
+            "option_c": "K2",
+            "option_d": "Monte Fuji",
+            "correct_answer": "B"
+        }
+    },
+    {
+        "model": "quiz.question",
+        "pk": 27,
+        "fields": {
+            "question_text": "Quale lingua si parla in Brasile?",
+            "option_a": "Spagnolo",
+            "option_b": "Portoghese",
+            "option_c": "Francese",
+            "option_d": "Inglese",
             "correct_answer": "B"
         }
     }

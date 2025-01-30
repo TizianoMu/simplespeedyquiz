@@ -11,42 +11,54 @@
     <script src="{% static 'quiz/theme.js' %}"></script>
 </head>
 <body>
-    <!-- Pulsante per cambiare il tema -->
-    <button id="themeToggle" class="btn mt-2 primary-color">Cambia Tema</button>
-    <div class="container text-center mt-5">
-        <img src="{% static 'quiz/logo.png' %}" class="logo mb-4">
-        <div id="timer" class="alert alert-warning">Tempo rimasto: <span id="time">20</span> secondi</div>
-        <div id="question-container" class="primary-color p-4 shadow rounded w-50">
-            <h4>Domanda:</h4>
-            <p class="lead">{{ question.question_text }}</p>
-            
-            <form method="POST" action="{% url 'submit_answer' %}">
-                {% csrf_token %}
-                <input type="hidden" name="question_id" value="{{ question.id }}">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="answer" value="A" id="optionA">
-                    <label class="form-check-label" for="optionA">{{ question.option_a }}</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="answer" value="B" id="optionB">
-                    <label class="form-check-label" for="optionB">{{ question.option_b }}</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="answer" value="C" id="optionC">
-                    <label class="form-check-label" for="optionC">{{ question.option_c }}</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" name="answer" value="D" id="optionD">
-                    <label class="form-check-label" for="optionD">{{ question.option_d }}</label>
-                </div>
-                <button type="submit" class="btn btn-success mt-3">Invia Risposta</button>
-            </form>
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+        <!-- Pulsante per cambiare il tema -->
+        <button id="themeToggle" class="btn mt-2 mb-2 primary-color">Cambia Tema</button>
+    
+        <!-- Titolo del gioco -->
+        <a href="{% url 'homepage' %}">
+            <img src="{% static 'quiz/logo.png' %}" class="logo img-fluid mt-4 mb-4">
+        </a>
+        <div class="container text-center mt-5">
+            <div id="timer" class="alert alert-dark p-4 w-50">Tempo rimasto: <span id="time">20</span> secondi</div>
+            <div id="question-container" class="primary-color p-4 shadow rounded w-50">
+                <p class="lead">{{ question.question_text }}</p>
+                
+                <form method="POST" action="{% url 'submit_answer' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="question_id" value="{{ question.id }}">
+                    <div class="form-check d-flex justify-content-center align-items-center">
+                        <input type="radio" class="form-check-input" name="answer" value="A" id="optionA" required>
+                        <label class="form-check-label text-center" style="min-width: 150px;" for="optionA">{{ question.option_a }}</label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center align-items-center">
+                        <input type="radio" class="form-check-input" name="answer" value="B" id="optionB" required>
+                        <label class="form-check-label text-center" style="min-width: 150px;" for="optionB">{{ question.option_b }}</label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center align-items-center">
+                        <input type="radio" class="form-check-input" name="answer" value="C" id="optionC" required>
+                        <label class="form-check-label text-center" style="min-width: 150px;" for="optionC">{{ question.option_c }}</label>
+                    </div>
+                    <div class="form-check d-flex justify-content-center align-items-center">
+                        <input type="radio" class="form-check-input" name="answer" value="D" id="optionD" required>
+                        <label class="form-check-label text-center" style="min-width: 150px;" for="optionD">{{ question.option_d }}</label>
+                    </div>
+                    <button type="submit" id="submitAnswer" class="btn btn-outline-light mt-3">Invia Risposta</button>
+                </form>
 
-            <div class="mt-4">
-                <p>Punteggio corrente: <strong>{{ score }}</strong></p>
-                <a href="{% url 'reset_quiz' %}" class="btn btn-danger">Ricomincia</a>
+                <div class="mt-4">
+                    <p>Punteggio corrente: <strong>{{ score }}</strong></p>
+                </div>
             </div>
         </div>
+        <footer>
+            <p>&copy; <span id="copyrightYear"></span> Tiziano Murzio. All rights reserved.</p>
+        </footer>
+        
+        <script>
+            // Get the current year
+            document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+        </script>
     </div>
 </body>
 </html>

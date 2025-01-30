@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
+:root {
+    --bs-btn-hover-bg-light: #bec2c5;
+    --bs-btn-hover-bg-dark: #3b3b3b;
+}
 body,
 html {
     margin: 0;
@@ -15,7 +18,15 @@ body {
 
 h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 4vw;
+}
+
+h2, h4, h5 {
+    font-size: calc(1.5rem + 1vw);
+}
+
+p.lead {
+    font-size: calc(1rem + 0.5vw);
 }
 
 .btn-light {
@@ -25,8 +36,11 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.btn-light:hover {
-    background-color: #f0f0f0;
+.btn.primary-color:hover{
+    background-color: var(--bs-btn-hover-bg-dark) ;
+}
+.btn.primary-color.light-theme:hover{
+    background-color: var(--bs-btn-hover-bg-light)
 }
 
 body.light-theme {
@@ -43,11 +57,56 @@ body.light-theme {
     color: #fff;
 }
 
-#question-container {
+#question-container,#timer {
     margin: 0 auto;
 }
 
+#timer{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 .logo {
+    width: 100%;
+    max-width: 200px;
     height: auto;
-    width: 15%;
+}
+.form-check-input:checked{
+    background-color: #770103;
+    border-color: #770103;
+}
+.btn-outline-light.light-theme:hover{
+    --bs-btn-color: #770103;
+    --bs-btn-border-color: #770103;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #770103;
+    --bs-btn-hover-border-color: #770103;
+    --bs-btn-focus-shadow-rgb: 248, 249, 250;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #770103;
+    --bs-btn-active-border-color: #770103;
+    --bs-btn-disabled-color: #770103;
+    --bs-btn-disabled-border-color: #770103;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+@media (max-width: 576px) {
+    .primary-color {
+        width: 90%;
+    }
+
+    h1, h2, h4 {
+        font-size: 3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
 }

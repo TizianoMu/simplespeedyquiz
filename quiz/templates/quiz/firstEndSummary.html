@@ -21,12 +21,12 @@
             <a href="{% url 'homepage' %}">
                 <img src="{% static 'quiz/logo.png' %}" class="logo img-fluid mt-4 mb-4">
             </a>
-            <h1 class="mb-4">Grazie per aver giocato a Rischiatutto!</h1>
+            <h2 class="mb-4">Complimenti! Hai completato la  prima fase del gioco! </h2>
             <div class="primary-color p-4 rounded shadow">
-                <h2>Punteggio finale: {{ score }} / {{ max_score }}</h2>
-                <p class="lead">Complimenti! Hai completato il quiz. Torna alla homepage per giocare di nuovo.</p>
+                <h3>Punteggio finale: {{ score }} / {{ max_score }}</h3>
+                <p class="lead">Sei pronto per la fase del tabellone elettronico?</p>
             </div>
-            <a href="{% url 'homepage' %}" class="btn  primary-color mt-4">Torna alla Homepage</a>
+            <a href="{% url 'tabellone' %}" class="btn  primary-color mt-4">Vai al tabellone elettronico</a>
             <footer>
                 <p>&copy; <span id="copyrightYear"></span> Tiziano Murzio. All rights reserved.</p>
             </footer>

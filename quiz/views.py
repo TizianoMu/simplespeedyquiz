@@ -3,6 +3,10 @@ from .models import Question
 import random
 
 def home(request):
+    if 'score' in request.session:
+        request.session['score'] = 0
+    if 'answered_questions' in request.session:
+        request.session['answered_questions'] = []
     return render(request, 'quiz/homepage.html')  # Renderizza la homepage
 
 def quiz_home(request):
@@ -55,10 +59,3 @@ def quiz_summary(request):
         'total_questions': total_questions,
         'max_score': max_score,
     })
-
-
-# Reset quiz
-def reset_quiz(request):
-    request.session['answered_questions'] = []
-    request.session['score'] = 0
-    return redirect('quiz_home')

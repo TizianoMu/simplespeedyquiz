@@ -24,6 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     element.classList.remove('light-theme');
                 }
             });
+            submitAnswer = document.getElementById("submitAnswer")
+            if (submitAnswer != null && submitAnswer != undefined){
+                if (savedTheme === 'light-theme'){
+                    submitAnswer.classList.remove('btn-outline-light');
+                    submitAnswer.classList.add('btn-outline-dark');
+                } else{
+                    submitAnswer.classList.add('btn-outline-light');
+                    submitAnswer.classList.remove('btn-outline-dark');
+                }
+            }
+
         }
 
         // Applica il tema quando la pagina viene caricata
@@ -38,6 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.forEach(element => {
                 element.classList.toggle('light-theme');
             });
+            var submitButtons = document.querySelectorAll('.btn-outline-light');
+            if (submitButtons.length==0){
+                submitButtons = document.querySelectorAll('.btn-outline-dark');
+                submitButtons.forEach(element => {
+                    element.classList.add('btn-outline-light');
+                    element.classList.remove('btn-outline-dark');
+                });
+            } else {
+                submitButtons.forEach(element => {
+                    element.classList.remove('btn-outline-light');
+                    element.classList.add('btn-outline-dark');
+                    
+                });
+            }
 
             // Memorizza il tema nel localStorage
             if (isLightTheme) {

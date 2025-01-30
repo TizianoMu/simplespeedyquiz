@@ -17,29 +17,27 @@
     <script src="{% static 'quiz/theme.js' %}"></script>
 </head>
 <body>
-    <!-- Pulsante per cambiare il tema -->
-    <button id="themeToggle" class="btn mt-2 primary-color">Cambia Tema</button>
-    
     <!-- Background principale usando il colore #770103 -->
-    <div class="vh-100 d-flex flex-column justify-content-center align-items-center text-center">
-        <!-- Titolo del gioco -->
-         <img src="{% static 'quiz/logo.png' %}" class="logo mt-4 mb-4">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+        <!-- Pulsante per cambiare il tema -->
+        <button id="themeToggle" class="btn mt-2 mb-2 primary-color">Cambia Tema</button>
 
+        <!-- Titolo del gioco -->
+        <a href="{% url 'homepage' %}">
+            <img src="{% static 'quiz/logo.png' %}" class="logo img-fluid mt-4 mb-4">
+        </a>
         <!-- Regolamento del gioco -->
-        <div class="primary-color p-4 shadow rounded w-50">
-            <h2 class="mb-3 fw-bold">Regolamento del Gioco</h2>
+        <div class="col-12 col-md-8 col-lg-8 primary-color p-4 shadow rounded">
             <h5 class="mb-5 fw-bold">Benvenuti al rischiatutto, uno dei quiz televisivi più amati dagli italiani.</h5>
             <h4 class="mb-3 fw-bold">DOMANDE PRELIMINARI</h4>
             <p class="lead">Il giocatore dovrà selezionare un argomento tra quelli presenti.<br>
             10 domande da 3000 € l'una, 15 secondi per rispondere.</p>
             <h4 class="mb-3 fw-bold">TABELLONE ELETTRONICO</h4>
             <p class="lead">Sul tabellone saranno presenti 4 jolly sparsi tra le domande,<br>
-                una domanda speciale e 2 rischi in cui è possibile rischiare una somma da 3000€
+                una domanda speciale e 2 rischi in cui è possibile rischiare una somma da 3000€ 
                 fino ad un massimo pari al proprio montepremi raggiunto. <br>
                 In caso di risposta errata la somma in palio verrà persa. <br>
   	            Il tempo sarà di 20 secondi a risposta.<br>Se il montepremi dovesse essere negativo al termine del tabellone, il gioco finirà.</p>
-            
-
             <h4 class="mb-3 fw-bold">RADDOPPIO FINALE</h4>
             <p class="lead">Le 5 domande all’interno della busta selezionata saranno inerenti all’argomento inizialmente scelto.<br>
                Le risposte vanno date entro un minuto e mezzo complessivo; <br>
@@ -51,6 +49,14 @@
         <a href="{% url 'quiz_home' %}" class="primary-color btn btn-lg mt-4 mb-4" style="font-size: 1.5rem;">
             <i class="fas fa-play"></i> Inizia il Quiz
         </a>
+        <footer>
+            <p>&copy; <span id="copyrightYear"></span> Tiziano Murzio. All rights reserved.</p>
+        </footer>
+        
+        <script>
+            // Get the current year
+            document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+        </script>
     </div>
 
     <!-- Bootstrap JS -->
